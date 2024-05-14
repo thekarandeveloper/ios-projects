@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="jHR-SD-S9s" userLabel="GridStackvIEW">
+                                <rect key="frame" x="62.666666666666657" y="315.66666666666669" width="268" height="221.00000000000006"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hky-rw-dSY" userLabel="firstrowstackview">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="61.666666666666664"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZg-sz-UTZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="61.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="lane" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="gridButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TDe-xH-sZb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owg-fV-a1A">
+                                                <rect key="frame" x="92.666666666666686" y="0.0" width="82.666666666666686" height="61.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="lane" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="gridButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gzv-Wi-RyD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wy2-55-vEE">
+                                                <rect key="frame" x="185.33333333333334" y="0.0" width="82.666666666666657" height="61.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="lane" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="gridButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHj-76-pBX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" tag="3" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XVk-dC-8MQ" userLabel="secondstackview">
+                                        <rect key="frame" x="0.0" y="79.666666666666629" width="268" height="61.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5D-8d-vtD">
+                                                <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="61.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="lane" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="gridButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ne3-OJ-0Ax"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR6-fi-bEQ">
+                                                <rect key="frame" x="92.666666666666686" y="0.0" width="82.666666666666686" height="61.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="lane" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="gridButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cke-Nf-FVI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQX-bf-zmT">
+                                                <rect key="frame" x="185.33333333333334" y="0.0" width="82.666666666666657" height="61.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="lane" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="gridButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEl-J3-lQR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ubM-ml-d4D" userLabel="thirdstackview">
+                                        <rect key="frame" x="0.0" y="159.33333333333331" width="268" height="61.666666666666657"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPq-cq-0HQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="82.666666666666671" height="61.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="lane" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="gridButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTT-JZ-p8j"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaV-8X-20I">
+                                                <rect key="frame" x="92.666666666666686" y="0.0" width="82.666666666666686" height="61.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="lane" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="gridButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Pt-Q1-nPk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6r-ln-87D">
+                                                <rect key="frame" x="185.33333333333334" y="0.0" width="82.666666666666657" height="61.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="tinted" image="lane" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="40"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="gridButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRV-Ht-u3M"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfw-Mb-l5P">
+                                <rect key="frame" x="162" y="626" width="68" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.14881853706717013" green="0.32790524731884091" blue="0.62301993541748246" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="resetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lbQ-GA-4Yy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wR-T9-oIJ">
+                                <rect key="frame" x="63" y="161" width="268" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" systemColor="tintColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TURN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huh-tR-2Zm">
+                                <rect key="frame" x="173" y="118" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="jHR-SD-S9s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tbb-1Z-tE5"/>
+                            <constraint firstItem="jHR-SD-S9s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wYv-Zk-RGI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="2wR-T9-oIJ" id="oke-ub-hbA"/>
+                        <outletCollection property="gridButtons" destination="fZg-sz-UTZ" collectionClass="NSMutableArray" id="RDm-Mx-eJC"/>
+                        <outletCollection property="gridButtons" destination="Owg-fV-a1A" collectionClass="NSMutableArray" id="Y0J-qZ-xsk"/>
+                        <outletCollection property="gridButtons" destination="Wy2-55-vEE" collectionClass="NSMutableArray" id="Xdb-OC-H82"/>
+                        <outletCollection property="gridButtons" destination="gQX-bf-zmT" collectionClass="NSMutableArray" id="fOK-wJ-L3e"/>
+                        <outletCollection property="gridButtons" destination="qR6-fi-bEQ" collectionClass="NSMutableArray" id="h2L-yG-xgW"/>
+                        <outletCollection property="gridButtons" destination="v5D-8d-vtD" collectionClass="NSMutableArray" id="gfz-ZM-Bs1"/>
+                        <outletCollection property="gridButtons" destination="XPq-cq-0HQ" collectionClass="NSMutableArray" id="fYB-YX-cwl"/>
+                        <outletCollection property="gridButtons" destination="gaV-8X-20I" collectionClass="NSMutableArray" id="ZiB-Mp-T4k"/>
+                        <outletCollection property="gridButtons" destination="a6r-ln-87D" collectionClass="NSMutableArray" id="ctL-Nr-aZW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lane" catalog="system" width="128" height="97"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
